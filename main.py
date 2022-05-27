@@ -20,3 +20,13 @@ class RealTimeCurrencyConverter():
         amount = round(amount * self.currencies[to_currency.upper()], 4)
 
         return amount
+
+
+if __name__ == '__main__':
+    # Instantiate currency converter class
+    converter = RealTimeCurrencyConverter(realtime_exchange_rate)
+    # pprint.pprint(converter.data)
+    from_currencies = input("Insert the currency abbreviations (from): ")
+    to_currencies = input("Insert the currency abbreviations (to): ")
+    amounts = int(input("Insert the amount to convert: "))
+    print(converter.convert(from_currencies, to_currencies, amounts))
