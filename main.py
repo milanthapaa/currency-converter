@@ -1,6 +1,6 @@
 import requests
 
-realtime_exchange_rate = 'https://api.exchangerate-api.com/v4/latest/USD'
+realtime_exchange_rate = 'https://open.er-api.com/v6/latest/USD'
 
 
 class RealTimeCurrencyConverter():
